@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0c0b17" />
+  <meta name="description" content="VibeJolt — one link, endless laughs. Play quick party games with your friends." />
+  <title>VibeJolt — One Link. Endless Laughs.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="site-header wrap">
+    <a class="brand" href="#top" aria-label="VibeJolt home">
+      <span class="brand-mark">✦</span>
+      <span>vibe<span class="brand-accent">jolt</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#games">Games</a>
+      <a href="#how-it-works">How it works</a>
+    </nav>
+    <button class="button button-small button-outline" id="headerCreateBtn">Create a room <span aria-hidden="true">↗</span></button>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR GROUP CHAT, BUT CHAOTIC</div>
+        <h1>Good friends.<br /> <span class="gradient-text">Questionable</span><br />decisions.</h1>
+        <p class="hero-description">Tiny games. Big laughs. Bring your people together for a little friendly chaos — all from one link.</p>
+        <div class="hero-actions">
+          <button class="button button-primary" id="heroCreateBtn">Create your room <span aria-hidden="true">→</span></button>
+          <button class="button button-ghost" id="heroExploreBtn"><span class="play-icon">▶</span> Explore games</button>
+        </div>
+        <div class="social-proof">
+          <div class="avatar-stack" aria-hidden="true"><span class="avatar avatar-pink">M</span><span class="avatar avatar-blue">R</span><span class="avatar avatar-yellow">S</span><span class="avatar avatar-green">A</span></div>
+          <div><strong>Made for your kind of weird</strong><span>No downloads. No awkward small talk.</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Preview of the VibeJolt party game room">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="floating-sticker sticker-star">✦</div>
+        <div class="floating-sticker sticker-bolt">ϟ</div>
+        <div class="floating-sticker sticker-smile">☺</div>
+        <article class="preview-card">
+          <div class="preview-topline"><span class="live-dot"></span> ROOM IN PROGRESS <span class="preview-menu">•••</span></div>
+          <div class="preview-title">Who’s most likely to…</div>
+          <div class="preview-question">accidentally become<br />a meme? 🫣</div>
+          <div class="vote-options">
+            <div class="vote-option"><span class="mini-avatar mini-purple">A</span><span>Alex</span><span class="vote-bar"><i style="width: 76%"></i></span><b>76%</b></div>
+            <div class="vote-option"><span class="mini-avatar mini-orange">J</span><span>Jamie</span><span class="vote-bar"><i style="width: 48%"></i></span><b>48%</b></div>
+            <div class="vote-option"><span class="mini-avatar mini-teal">S</span><span>Sam</span><span class="vote-bar"><i style="width: 21%"></i></span><b>21%</b></div>
+          </div>
+          <div class="preview-footer"><span>💬 Friendly fire only</span><span>ROUND 02 / 05</span></div>
+        </article>
+        <div class="floating-note note-left"><span class="note-icon">🎯</span><span><b>Plot twist!</b><small>Everyone voted Alex</small></span></div>
+        <div class="floating-note note-right"><span class="note-icon">😂</span><span><b>+100 LOLs</b><small>Friendship survived</small></span></div>
+      </div>
+    </section>
+
+    <section class="room-strip wrap" aria-label="Create or join a room">
+      <div class="room-strip-copy"><span class="room-strip-icon">⚡</span><div><strong>Your crew is one click away</strong><p>Make a room, grab the link, and let the chaos begin.</p></div></div>
+      <div class="room-strip-actions"><button class="button button-primary" id="stripCreateBtn">＋ New room</button><button class="button button-outline" id="joinRoomBtn">Join with code</button></div>
+    </section>
+
+    <section class="games-section wrap" id="games">
+      <div class="section-heading"><div><div class="eyebrow">PICK YOUR POISON</div><h2>Choose your <span class="gradient-text">kind of chaos.</span></h2></div><p>Quick to learn. Impossible to play with a straight face.</p></div>
+      <div class="games-grid">
+        <article class="game-card game-vote">
+          <div class="game-art art-vote"><span class="art-blob blob-a"></span><span class="art-blob blob-b"></span><div class="speech-bubble bubble-one">ME?!</div><div class="speech-bubble bubble-two">100%</div><div class="art-emoji">🫵</div><span class="art-spark spark-one">✦</span><span class="art-spark spark-two">✧</span></div>
+          <div class="game-card-content"><div class="game-meta"><span class="game-tag tag-purple">THE GROUP CHAT</span><span class="game-time">◷ 3–5 min</span></div><h3>Who’s Most Likely?</h3><p>Point fingers. Defend your reputation. Find out who your friends really think you are.</p><button class="text-button" data-game="vote">Play this game <span>↗</span></button></div>
+        </article>
+        <article class="game-card game-wheel">
+          <div class="game-art art-wheel"><div class="wheel-preview"><span>🤸</span><span>🎤</span><span>🕺</span><span>😈</span><span>🎭</span><span>🫡</span></div><div class="wheel-pointer"></div><span class="wheel-center">VJ</span><span class="art-spark wheel-spark">✦</span></div>
+          <div class="game-card-content"><div class="game-meta"><span class="game-tag tag-orange">PURE MAYHEM</span><span class="game-time">◷ 1–2 min</span></div><h3>Chaos Wheel</h3><p>Spin the wheel. Accept your fate. The universe has a questionable sense of humor.</p><button class="text-button" data-game="wheel">Spin the wheel <span>↗</span></button></div>
+        </article>
+        <article class="game-card game-emoji">
+          <div class="game-art art-emoji"><div class="emoji-tile tile-one">🧠</div><div class="emoji-tile tile-two">🌧️</div><div class="emoji-tile tile-three">🐈</div><div class="emoji-tile tile-four">🎬</div><span class="emoji-equals">?</span><span class="art-spark emoji-spark">✧</span></div>
+          <div class="game-card-content"><div class="game-meta"><span class="game-tag tag-green">BRAIN GLITCH</span><span class="game-time">◷ 2–4 min</span></div><h3>Emoji Decode</h3><p>Crack the emoji code before your friends do. Big brain energy not guaranteed.</p><button class="text-button" data-game="emoji">Crack the code <span>↗</span></button></div>
+        </article>
+        <article class="game-card game-dna">
+          <div class="game-art art-dna"><span class="dna-label dna-label-a">THE CHAOS</span><span class="dna-label dna-label-b">THE MOM</span><span class="dna-label dna-label-c">THE GHOST</span><div class="dna-orbit orbit-one"></div><div class="dna-orbit orbit-two"></div><div class="dna-core">🧬</div><span class="art-spark dna-spark">✦</span></div>
+          <div class="game-card-content"><div class="game-meta"><span class="game-tag tag-pink">FRIENDSHIP SCIENCE</span><span class="game-time">◷ 1 min</span></div><h3>Group DNA</h3><p>Discover your crew’s highly unscientific identity. Results may expose the group.</p><button class="text-button" data-game="dna">Reveal your vibe <span>↗</span></button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="how-section wrap" id="how-it-works">
+      <div class="section-heading"><div><div class="eyebrow">NO MANUAL REQUIRED</div><h2>Three steps to <span class="gradient-text">unhinged.</span></h2></div><p>Works in your browser. No app, no downloads, no overthinking.</p></div>
+      <div class="steps-grid"><article class="step-card"><span class="step-number">01</span><div class="step-icon step-purple">＋</div><h3>Make a room</h3><p>Give your room a name and pick a nickname. That's your whole setup.</p></article><article class="step-card"><span class="step-number">02</span><div class="step-icon step-orange">↗</div><h3>Invite your people</h3><p>Copy the room code or share the invite link in your group chat.</p></article><article class="step-card"><span class="step-number">03</span><div class="step-icon step-green">✦</div><h3>Make memories</h3><p>Play, vote, spin, and collect receipts you’ll bring up forever.</p></article></div>
+    </section>
+
+    <section class="final-cta wrap"><div class="cta-spark cta-spark-a">✦</div><div class="cta-spark cta-spark-b">✧</div><div class="eyebrow">YOUR FRIENDS ARE WAITING</div><h2>Less scrolling.<br /><span class="gradient-text">More lore.</span></h2><p>Start the group’s next inside joke right here.</p><button class="button button-primary button-large" id="bottomCreateBtn">Start the chaos <span>→</span></button></section>
+  </main>
+
+  <footer class="site-footer wrap"><a class="brand footer-brand" href="#top"><span class="brand-mark">✦</span><span>vibe<span class="brand-accent">jolt</span></span></a><p>Made for the group chat legends. <span>© <span id="year"></span> VibeJolt Demo</span></p><a href="#top" class="back-top">Back to top ↑</a></footer>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close dialog">×</button>
+      <div class="modal-eyebrow" id="modalEyebrow">LET'S GET THIS PARTY STARTED</div>
+      <h2 id="modalTitle">Create your room</h2>
+      <div id="modalBody"></div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
